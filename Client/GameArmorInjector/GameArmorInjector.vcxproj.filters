@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GameArmorInjector.cpp" />
+    <ClCompile Include="PEAnalyser.cpp" />
+    <ClCompile Include="PEInject.cpp" />
+    <ClCompile Include="GALS.cpp" />
+    <ClCompile Include="InjectionStub.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{d896c90c-97ce-41f1-bdd1-860528a23e79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PEAnalyser.h" />
+    <ClInclude Include="PEInject.h" />
+    <ClInclude Include="GALS.h" />
+  </ItemGroup>
+</Project>

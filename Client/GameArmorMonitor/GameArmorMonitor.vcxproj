@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Crypt\Base64.h" />
+    <ClInclude Include="Crypt\BlowFish.h" />
+    <ClInclude Include="Crypt\crypton1.h" />
+    <ClInclude Include="Crypt\Rijndael.h" />
+    <ClInclude Include="Distorm\config.h" />
+    <ClInclude Include="Distorm\decoder.h" />
+    <ClInclude Include="Distorm\distorm.h" />
+    <ClInclude Include="Distorm\instructions.h" />
+    <ClInclude Include="Distorm\insts.h" />
+    <ClInclude Include="Distorm\mnemonics.h" />
+    <ClInclude Include="Distorm\operands.h" />
+    <ClInclude Include="Distorm\prefix.h" />
+    <ClInclude Include="Distorm\textdefs.h" />
+    <ClInclude Include="Distorm\wstring.h" />
+    <ClInclude Include="Distorm\x86defs.h" />
+    <ClInclude Include="GameArmor\Addons\CustomNickColor.h" />
+    <ClInclude Include="GameArmor\Content\GRFManager.h" />
+    <ClInclude Include="GameArmor\GameArmor.h" />
+    <ClInclude Include="GameArmor\Kernel\TDriver.h" />
+    <ClInclude Include="GameArmor\Network\NetworkHooks.h" />
+    <ClInclude Include="GameArmor\Network\PacketHandler.h" />
+    <ClInclude Include="GameArmor\Network\PacketLen.h" />
+    <ClInclude Include="GameArmor\Protection\PatternDB.h" />
+    <ClInclude Include="GameArmor\Protection\RegisterClassHook.h" />
+    <ClInclude Include="GameArmor\Protection\LoadLibraryHook.h" />
+    <ClInclude Include="GameArmor\Server\GAServerConnection.h" />
+    <ClInclude Include="Hook\distorm.h" />
+    <ClInclude Include="Hook\NCodeHook.h" />
+    <ClInclude Include="Hook\NCodeHookInstantiation.h" />
+    <ClInclude Include="Hook\NCodeHookItem.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Utils\LMFAOCrypt.h" />
+    <ClInclude Include="Utils\MemoryTools.h" />
+    <ClInclude Include="Utils\VirtualizerSDK.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Crypt\Base64.cpp" />
+    <ClCompile Include="Crypt\BlowFish.cpp" />
+    <ClCompile Include="Crypt\crypton1.c" />
+    <ClCompile Include="Crypt\Rijndael.cpp" />
+    <ClCompile Include="Distorm\decoder.c" />
+    <ClCompile Include="Distorm\distorm.c" />
+    <ClCompile Include="Distorm\instructions.c" />
+    <ClCompile Include="Distorm\insts.c" />
+    <ClCompile Include="Distorm\mnemonics.c" />
+    <ClCompile Include="Distorm\operands.c" />
+    <ClCompile Include="Distorm\prefix.c" />
+    <ClCompile Include="Distorm\textdefs.c" />
+    <ClCompile Include="Distorm\wstring.c" />
+    <ClCompile Include="Distorm\x86defs.c" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="GameArmor\Addons\CustomNickColor.cpp" />
+    <ClCompile Include="GameArmor\Content\GRFManager.cpp" />
+    <ClCompile Include="GameArmor\GameArmor.cpp" />
+    <ClCompile Include="GameArmor\Kernel\TDriver.cpp" />
+    <ClCompile Include="GameArmor\Network\NetworkHooks.cpp" />
+    <ClCompile Include="GameArmor\Network\PacketHandler.cpp" />
+    <ClCompile Include="GameArmor\Network\PacketLen.cpp" />
+    <ClCompile Include="GameArmor\Protection\PatternDB.cpp" />
+    <ClCompile Include="GameArmor\Protection\RegisterClassHook.cpp" />
+    <ClCompile Include="GameArmor\Protection\LoadLibraryHook.cpp" />
+    <ClCompile Include="GameArmor\Server\GAServerConnection.cpp" />
+    <ClCompile Include="Hook\NCodeHook.cpp" />
+    <ClCompile Include="Hook\NCodeHookItem.cpp" />
+    <ClCompile Include="Utils\LMFAOCrypt.cpp" />
+    <ClCompile Include="Utils\MemoryTools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Loader\Loader.ico" />
+    <None Include="..\Loader\small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameArmorMonitor.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4FFCBA46-5418-47FE-89EB-EABA43371CA7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nsou</RootNamespace>
+    <ProjectName>GameArmorMonitor</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>agmon</TargetName>
+    <OutDir>D:\RagnaWinter\client</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>agmon</TargetName>
+    <OutDir>D:\RagnaWinter\client</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;_USRDLL;NSOU_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>wininet.lib;Winhttp.lib;Common.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_USRDLL;NSOU_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Common.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

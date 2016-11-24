@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{1C71CCDE-5EE8-4758-8446-CDB3AF95F5B0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameArmorDriver", "GameArmorDriver\GameArmorDriver.vcxproj", "{EA9D70E8-59DD-43EA-99CF-81B81AE4AF19}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameArmorLoader", "GameArmorLoader\GameArmorLoader.vcxproj", "{3A4BBC3E-97B5-463E-80F8-9B46FBA13615}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameArmorMonitor", "GameArmorMonitor\GameArmorMonitor.vcxproj", "{4FFCBA46-5418-47FE-89EB-EABA43371CA7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GRFNameCrypter", "GRFNameCrypter\GRFNameCrypter.vcxproj", "{896AE87D-4041-4F3A-8746-EE9E00FA349B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameArmorInjector", "GameArmorInjector\GameArmorInjector.vcxproj", "{AF724D42-B248-4068-9220-D34D0F4E90EC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4FFCBA46-5418-47FE-89EB-EABA43371CA7} = {4FFCBA46-5418-47FE-89EB-EABA43371CA7}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C71CCDE-5EE8-4758-8446-CDB3AF95F5B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C71CCDE-5EE8-4758-8446-CDB3AF95F5B0}.Debug|Win32.Build.0 = Debug|Win32
+		{1C71CCDE-5EE8-4758-8446-CDB3AF95F5B0}.Debug|x64.ActiveCfg = Debug|Win32
+		{1C71CCDE-5EE8-4758-8446-CDB3AF95F5B0}.Debug|x64.Build.0 = Debug|Win32
+		{1C71CCDE-5EE8-4758-8446-CDB3AF95F5B0}.Release|Win32.ActiveCfg = Release|Win32
+		{1C71CCDE-5EE8-4758-8446-CDB3AF95F5B0}.Release|Win32.Build.0 = Release|Win32
+		{1C71CCDE-5EE8-4758-8446-CDB3AF95F5B0}.Release|x64.ActiveCfg = Release|Win32
+		{EA9D70E8-59DD-43EA-99CF-81B81AE4AF19}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA9D70E8-59DD-43EA-99CF-81B81AE4AF19}.Debug|x64.ActiveCfg = Debug|x64
+		{EA9D70E8-59DD-43EA-99CF-81B81AE4AF19}.Debug|x64.Build.0 = Debug|x64
+		{EA9D70E8-59DD-43EA-99CF-81B81AE4AF19}.Release|Win32.ActiveCfg = Release|Win32
+		{EA9D70E8-59DD-43EA-99CF-81B81AE4AF19}.Release|x64.ActiveCfg = Release|x64
+		{EA9D70E8-59DD-43EA-99CF-81B81AE4AF19}.Release|x64.Build.0 = Release|x64
+		{3A4BBC3E-97B5-463E-80F8-9B46FBA13615}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A4BBC3E-97B5-463E-80F8-9B46FBA13615}.Debug|Win32.Build.0 = Debug|Win32
+		{3A4BBC3E-97B5-463E-80F8-9B46FBA13615}.Debug|x64.ActiveCfg = Debug|Win32
+		{3A4BBC3E-97B5-463E-80F8-9B46FBA13615}.Release|Win32.ActiveCfg = Release|Win32
+		{3A4BBC3E-97B5-463E-80F8-9B46FBA13615}.Release|Win32.Build.0 = Release|Win32
+		{3A4BBC3E-97B5-463E-80F8-9B46FBA13615}.Release|x64.ActiveCfg = Release|Win32
+		{4FFCBA46-5418-47FE-89EB-EABA43371CA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4FFCBA46-5418-47FE-89EB-EABA43371CA7}.Debug|Win32.Build.0 = Debug|Win32
+		{4FFCBA46-5418-47FE-89EB-EABA43371CA7}.Debug|x64.ActiveCfg = Debug|Win32
+		{4FFCBA46-5418-47FE-89EB-EABA43371CA7}.Release|Win32.ActiveCfg = Release|Win32
+		{4FFCBA46-5418-47FE-89EB-EABA43371CA7}.Release|Win32.Build.0 = Release|Win32
+		{4FFCBA46-5418-47FE-89EB-EABA43371CA7}.Release|x64.ActiveCfg = Release|Win32
+		{896AE87D-4041-4F3A-8746-EE9E00FA349B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{896AE87D-4041-4F3A-8746-EE9E00FA349B}.Debug|Win32.Build.0 = Debug|Win32
+		{896AE87D-4041-4F3A-8746-EE9E00FA349B}.Debug|x64.ActiveCfg = Debug|Win32
+		{896AE87D-4041-4F3A-8746-EE9E00FA349B}.Release|Win32.ActiveCfg = Release|Win32
+		{896AE87D-4041-4F3A-8746-EE9E00FA349B}.Release|Win32.Build.0 = Release|Win32
+		{896AE87D-4041-4F3A-8746-EE9E00FA349B}.Release|x64.ActiveCfg = Release|Win32
+		{AF724D42-B248-4068-9220-D34D0F4E90EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF724D42-B248-4068-9220-D34D0F4E90EC}.Debug|Win32.Build.0 = Debug|Win32
+		{AF724D42-B248-4068-9220-D34D0F4E90EC}.Debug|x64.ActiveCfg = Debug|Win32
+		{AF724D42-B248-4068-9220-D34D0F4E90EC}.Release|Win32.ActiveCfg = Release|Win32
+		{AF724D42-B248-4068-9220-D34D0F4E90EC}.Release|Win32.Build.0 = Release|Win32
+		{AF724D42-B248-4068-9220-D34D0F4E90EC}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

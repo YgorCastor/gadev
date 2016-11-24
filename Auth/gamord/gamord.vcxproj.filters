@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="client.cpp" />
+    <ClCompile Include="gamord.cpp" />
+    <ClCompile Include="md5.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="show_message.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="strfuncs.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_connection.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="timers.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="config_file.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gamord.hpp" />
+    <ClInclude Include="config_file.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="database_helper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="show_message.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="strfuncs.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp_connection.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp_server.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="timers.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{ad9a9bbb-0ff3-4ef1-a15a-ddff4d700af8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

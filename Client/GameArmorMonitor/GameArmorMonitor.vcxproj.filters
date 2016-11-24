@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Distorm\decoder.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Distorm\distorm.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Distorm\insts.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Distorm\instructions.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Distorm\operands.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Distorm\prefix.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Distorm\textdefs.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Distorm\wstring.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Distorm\x86defs.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\NCodeHook.cpp">
+      <Filter>Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook\NCodeHookItem.cpp">
+      <Filter>Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypt\BlowFish.cpp">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\LMFAOCrypt.cpp">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypt\Rijndael.cpp">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Distorm\mnemonics.c">
+      <Filter>Distorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\MemoryTools.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\GameArmor.cpp">
+      <Filter>GameArmor</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Server\GAServerConnection.cpp">
+      <Filter>GameArmor\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Addons\CustomNickColor.cpp">
+      <Filter>GameArmor\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Protection\PatternDB.cpp">
+      <Filter>GameArmor\Protect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Protection\RegisterClassHook.cpp">
+      <Filter>GameArmor\Protect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Protection\LoadLibraryHook.cpp">
+      <Filter>GameArmor\Protect</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Network\NetworkHooks.cpp">
+      <Filter>GameArmor\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Network\PacketHandler.cpp">
+      <Filter>GameArmor\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Network\PacketLen.cpp">
+      <Filter>GameArmor\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Kernel\TDriver.cpp">
+      <Filter>GameArmor\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="GameArmor\Content\GRFManager.cpp">
+      <Filter>GameArmor\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypt\Base64.cpp">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypt\crypton1.c">
+      <Filter>Crypt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hook\distorm.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\distorm.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\decoder.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\config.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\insts.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\instructions.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\operands.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\prefix.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\textdefs.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\wstring.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\x86defs.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\NCodeHookItem.h">
+      <Filter>Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\NCodeHook.h">
+      <Filter>Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook\NCodeHookInstantiation.h">
+      <Filter>Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypt\BlowFish.h">
+      <Filter>Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\LMFAOCrypt.h">
+      <Filter>Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypt\Rijndael.h">
+      <Filter>Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Distorm\mnemonics.h">
+      <Filter>Distorm</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\VirtualizerSDK.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\MemoryTools.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\GameArmor.h">
+      <Filter>GameArmor</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Server\GAServerConnection.h">
+      <Filter>GameArmor\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Addons\CustomNickColor.h">
+      <Filter>GameArmor\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Protection\PatternDB.h">
+      <Filter>GameArmor\Protect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Protection\RegisterClassHook.h">
+      <Filter>GameArmor\Protect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Protection\LoadLibraryHook.h">
+      <Filter>GameArmor\Protect</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Network\NetworkHooks.h">
+      <Filter>GameArmor\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Network\PacketHandler.h">
+      <Filter>GameArmor\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Network\PacketLen.h">
+      <Filter>GameArmor\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Kernel\TDriver.h">
+      <Filter>GameArmor\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="GameArmor\Content\GRFManager.h">
+      <Filter>GameArmor\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypt\Base64.h">
+      <Filter>Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypt\crypton1.h">
+      <Filter>Crypt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Loader\small.ico">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\Loader\Loader.ico">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Hook">
+      <UniqueIdentifier>{4806da98-8cc8-4adc-91ce-ccbe4f2a5329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Distorm">
+      <UniqueIdentifier>{e6b8ef56-6dcf-454c-90ab-26483ea6a18f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Crypt">
+      <UniqueIdentifier>{82490e19-ae12-49b0-a705-aec423a936e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{92a9a833-8fea-4240-b30e-568e0bc9c6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{c5ec7977-f311-4f29-8878-9924f5376b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameArmor">
+      <UniqueIdentifier>{8b272077-2021-44f2-8566-25f13621e059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameArmor\Server">
+      <UniqueIdentifier>{ee870cca-abc1-4b81-88a2-22645699231a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameArmor\Addons">
+      <UniqueIdentifier>{a3cc15ea-9399-4a64-b2ec-7eb6c899156f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameArmor\Protect">
+      <UniqueIdentifier>{2aa39830-db66-479a-b741-4c24f2f82672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameArmor\Network">
+      <UniqueIdentifier>{82de0182-b53b-4fd1-93c1-01912629a806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameArmor\Driver">
+      <UniqueIdentifier>{26065c1b-54ba-491a-af5d-567132a07200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameArmor\Content">
+      <UniqueIdentifier>{36d3dfe2-b096-4e7d-8c6c-ad327e8142db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameArmorMonitor.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
